@@ -1,5 +1,14 @@
 class Spaceship extends Floater {
+  private double myXspeed;
+  private double myYspeed;
+  private double myCenterX;
+  private double myCenterY;
+
   Spaceship() {
+    initializeSpaceship();
+  }
+
+  private void initializeSpaceship() {
     corners = 4;
     xCorners = new int[corners];
     yCorners = new int[corners];
@@ -19,23 +28,23 @@ class Spaceship extends Floater {
     myCenterY = 200;
   }
 
-  void setXspeed(double x) {
+  public void setXspeed(double x) {
     myXspeed = x;
   }
 
-  void setYspeed(double y) {
+  public void setYspeed(double y) {
     myYspeed = y;
   }
 
-  void setXCenter(double x2) {
+  public void setXCenter(double x2) {
     myCenterX = x2;
   }
 
-  void setYCenter(double y2) {
+  public void setYCenter(double y2) {
     myCenterY = y2;
   }
 
-  void resetPosition() {
+  public void resetPosition() {
     setXspeed(0);
     setYspeed(0);
     turn((int)(Math.random() * 300 + 100));
@@ -43,3 +52,4 @@ class Spaceship extends Floater {
     setYCenter((int)(Math.random() * 300 + 100));
   }
 }
+
