@@ -8,7 +8,7 @@ class Spaceship extends Floater {
     initializeSpaceship();
   }
 
-  public void initializeSpaceship() {
+  private void initializeSpaceship() {
     corners = 4;
     xCorners = new int[corners];
     yCorners = new int[corners];
