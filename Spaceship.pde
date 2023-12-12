@@ -8,7 +8,7 @@ class Spaceship extends Floater {
     initializeSpaceship();
   }
 
-  private void initializeSpaceship() {
+  public void initializeSpaceship() {
     corners = 4;
     xCorners = new int[corners];
     yCorners = new int[corners];
@@ -48,8 +48,8 @@ class Spaceship extends Floater {
     setXspeed(0);
     setYspeed(0);
     turn((int)(Math.random() * 300 + 100));
-    setXCenter((int)(Math.random() * 300 + 200));
-    setYCenter((int)(Math.random() * 300 + 200));
+    setXCenter((int)(Math.random() * 300 + 100));
+    setYCenter((int)(Math.random() * 300 + 100));
   }
 }
 
