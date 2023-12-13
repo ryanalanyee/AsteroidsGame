@@ -44,12 +44,4 @@ class Spaceship extends Floater {
     myCenterY = y2;
   }
 
-  public void resetPosition() {
-    setXspeed(0);
-    setYspeed(0);
-    turn((int)(Math.random() * 300 + 100));
-    setXCenter((int)(Math.random() * 300 + 100));
-    setYCenter((int)(Math.random() * 300 + 100));
-  }
-}
-
+  
