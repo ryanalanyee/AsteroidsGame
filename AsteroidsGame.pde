@@ -39,17 +39,17 @@ nightSky[i].show();
  }
  }
  
- for(int j = 0; j < bullets.size(); j++){
- float d = 0;
- for(int i = 0; i < list.size(); i++){
- d = dist((float)bullets.get(j).getMyCenterX(), (float)bullets.get(j).getMyCenterY(), (float)list.get(i).getX(), (float)list.get(i).getY());
- if(d < 30){
- bullets.remove(j);
- list.remove(i);
- break;
- }
- }
- if(d < 30) break;
+ for(int j = 0; j < bullets.size(); j++){ 
+ float d = 0; 
+ for(int i = 0; i < list.size(); i++){ 
+ d = dist((float)bullets.get(j).getMyCenterX(), (float)bullets.get(j).getMyCenterY(), (float)list.get(i).getX(), (float)list.get(i).getY()); 
+ if(d < 30){ 
+ bullets.remove(j); 
+ list.remove(i); 
+ break; 
+ } 
+ } 
+ if(d < 30) break; 
  }
  
  for(int i = 0; i < bullets.size(); i++){
@@ -84,7 +84,7 @@ public void keyPressed()
      bob.setYCenter((int)(Math.random()*300+100));
      
  }
- if(key == 'q'){
+ if(key == 'r'){
  bullets.add(new Bullet(bob));
  }
 
