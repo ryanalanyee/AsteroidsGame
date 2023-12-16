@@ -1,6 +1,6 @@
 class Asteroid extends Floater {
   double rotSpeed;
- 
+  
   public Asteroid() {
   corners = 6;
   xCorners = new int[corners];
@@ -17,7 +17,7 @@ class Asteroid extends Floater {
   yCorners[4] = -8;
   xCorners[5] = -5;
   yCorners[5] = 0;
- myColor = color(150);
+ myColor = color(150,90,50);
  myXspeed = (Math.random()*5)-1;
   myYspeed = (Math.random()*5)-1;
   myPointDirection = (Math.random()*360);
@@ -37,6 +37,11 @@ class Asteroid extends Floater {
 public void setYspeed(double y) {
   myYspeed = y;
   }
- 
+ public double getX(){
+    return myCenterX;
+  }
+  public double getY(){
+    return myCenterY;
+  }
 }
 
