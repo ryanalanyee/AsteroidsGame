@@ -84,7 +84,7 @@ public void keyPressed()
      bob.setYCenter((int)(Math.random()*300+100));
      
  }
- if(key == 'r'){
+ if(key == 'q'){
  bullets.add(new Bullet(bob));
  }
 
